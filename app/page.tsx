@@ -1,13 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-// import { SplashCursor } from "@/components/ui/splash-cursor";
+import { SplashCursor } from "@/components/ui/splash-cursor";
 
 export default function Home() {
   return (
     <>
       {/* Background container with splash cursor */}
-      <div className="fixed inset-0 z-0">{/* <SplashCursor /> */}</div>
+      <div className="fixed inset-0 z-0">
+        <SplashCursor />
+      </div>
 
       <main className="relative min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/50 via-gray-900/50 to-black/50 overflow-hidden">
         {/* Background Effects */}

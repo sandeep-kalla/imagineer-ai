@@ -165,7 +165,7 @@ export default function GeneratePage() {
               } transition-all duration-700 ease-in-out`}
             >
               <div className="bg-black/40 backdrop-blur-xl rounded-2xl border border-white/10 p-8 shadow-lg shadow-purple-500/10">
-                <h1 className="text-3xl font-bold text-white mb-6 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500 text-transparent bg-clip-text">
+                <h1 className="text-3xl font-bold text-white mb-6 bg-gradient-to-r from-purple-500 via-fuchsia-500 to-pink-500  bg-clip-text">
                   Generate Image
                 </h1>
 
@@ -222,7 +222,9 @@ export default function GeneratePage() {
                   <div className="flex items-center justify-between pt-4">
                     <p className="text-gray-400 text-sm">
                       Generations left today:{" "}
-                      <span className="text-purple-400 font-medium">{generationsLeft}</span>
+                      <span className="text-purple-400 font-medium">
+                        {generationsLeft}
+                      </span>
                     </p>
                     <Button
                       onClick={handleGenerate}
