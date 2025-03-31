@@ -1,15 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
-import { SplashCursor } from "@/components/ui/splash-cursor";
+// import { SplashCursor } from "@/components/ui/splash-cursor";
 
 export default function Home() {
   return (
     <>
       {/* Background container with splash cursor */}
-      <div className="fixed inset-0 z-0">
-        <SplashCursor />
-      </div>
+      <div className="fixed inset-0 z-0">{/* <SplashCursor /> */}</div>
 
       <main className="relative min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-purple-900/50 via-gray-900/50 to-black/50 overflow-hidden">
         {/* Background Effects */}
@@ -19,20 +17,20 @@ export default function Home() {
           <div className="absolute -top-40 -left-20 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px] animate-pulse"></div>
           <div className="absolute top-0 right-1/4 w-72 h-72 bg-fuchsia-500/30 rounded-full blur-[100px] animate-pulse delay-700"></div>
           <div className="absolute top-1/4 -right-20 w-80 h-80 bg-violet-500/25 rounded-full blur-[110px] animate-pulse delay-1500"></div>
-          
+
           {/* Middle Section Orbs */}
           <div className="absolute top-1/3 left-1/4 w-96 h-96 bg-purple-800/30 rounded-full blur-[128px] animate-pulse delay-300"></div>
           <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-indigo-500/20 rounded-full blur-[90px] animate-pulse delay-1000"></div>
           <div className="absolute top-2/3 left-1/3 w-72 h-72 bg-pink-500/20 rounded-full blur-[100px] animate-pulse delay-2000"></div>
-          
+
           {/* Bottom Section Orbs */}
           <div className="absolute -bottom-40 left-1/4 w-88 h-88 bg-purple-700/25 rounded-full blur-[115px] animate-pulse delay-500"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-fuchsia-500/20 rounded-full blur-[128px] animate-pulse delay-1200"></div>
           <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-violet-600/25 rounded-full blur-[110px] animate-pulse delay-1800"></div>
-          
+
           {/* Enhanced Gradient Mesh */}
           <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div>
-          
+
           {/* Enhanced Radial Gradient Overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/90"></div>
         </div>
@@ -97,8 +95,13 @@ export default function Home() {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-white mb-2">Create Anything</h3>
-                    <p className="text-gray-400">Generate stunning, unique images from simple text descriptions</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">
+                      Create Anything
+                    </h3>
+                    <p className="text-gray-400">
+                      Generate stunning, unique images from simple text
+                      descriptions
+                    </p>
                   </div>
                 </div>
 
@@ -122,8 +125,12 @@ export default function Home() {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-white mb-2">Transform Images</h3>
-                    <p className="text-gray-400">Upload and edit your own images with AI-powered tools</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">
+                      Transform Images
+                    </h3>
+                    <p className="text-gray-400">
+                      Upload and edit your own images with AI-powered tools
+                    </p>
                   </div>
                 </div>
 
@@ -147,8 +154,12 @@ export default function Home() {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-lg font-semibold text-white mb-2">Free to Start</h3>
-                    <p className="text-gray-400">Begin with 30 free generations, Sign up to unlock access</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">
+                      Free to Start
+                    </h3>
+                    <p className="text-gray-400">
+                      Begin with 30 free generations, Sign up to unlock access
+                    </p>
                   </div>
                 </div>
               </div>
@@ -173,7 +184,8 @@ export default function Home() {
               <div className="mt-16 text-sm text-gray-500 relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-pink-500/5 blur-xl -z-10"></div>
                 <p className="relative">
-                  © 2025 Imagineer AI. Powered by Gemini API. Not for commercial use.
+                  © 2025 Imagineer AI. Powered by Gemini API. Not for commercial
+                  use.
                 </p>
               </div>
             </div>
