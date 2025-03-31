@@ -33,7 +33,11 @@ export default function Navbar() {
     async function fetchUser() {
       try {
         const userData = await getUser();
-        setUser(userData);
+        if (userData && userData.email) {
+          setUser({ id: userData.id, email: userData.email });
+        } else {
+          setUser(null);
+        }
       } catch (error) {
         console.error("Error fetching user:", error);
       } finally {
